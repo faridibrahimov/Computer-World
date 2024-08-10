@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: bisque;
+    padding: 10px;
+}
+
+h1,h2 {
+    font-family: "Playwrite CU", cursive;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.headera {
+    text-decoration: none;
+    margin-right: 70px;
+    color: bisque;
+}
+
+.feedback {
+    background-color: rgba(4, 4, 4, 0.938);
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: bisque;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+    outline: none;
+    background-color: bisque;
+}
+
+textarea {
+    width: 400px;
+    height: 250px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+    outline: none;
+    background-color: bisque;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+    outline: none;
+    background-color: bisque;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: bisque;
+    padding: 20px;
+}
+
+.container {
+    padding: 20px;
+    background-color: black;
+    color: bisque;
+    border: 3px solid aliceblue;
+    border-radius: 15px;
+}
+
+.bestseller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.computer1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.computer2{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.computerimg{
+    width: 70%;
+}
+
+.computerp {
+    margin-top: 15px;
+}
+
+.computerimg:hover{
+    transform: scale(1.1);
+    transition: 2s transform;
+}
+
+.computer_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pc_info1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.computer_info2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pc_info2{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pc_img{
+    width: 80%;
+}
+
+.pc_img:hover{
+    transform: scale(1.2);
+    transition: 2s transform;
+}
+
+.pc_infop{
+    width: 70%;
+}
+
+.MSI_info,.ASUS_info, .Acer_info,.Lenovo_info{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.imgicon {
+    width: 25%;
+}
