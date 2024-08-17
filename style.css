@@ -10,13 +10,24 @@ body {
 }
 
 header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     color: bisque;
-    padding: 10px;
+    padding: 10px; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: black;
+    color: bisque;
 }
+
+
 
 h1,h2 {
     font-family: "Playwrite CU", cursive;
@@ -189,4 +200,71 @@ footer {
 
 .imgicon {
     width: 25%;
+}
+
+/* начало работы с бургер меню */
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: bisque;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: black;
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item {
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
 }

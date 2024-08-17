@@ -5,20 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Computer Wolrd</title>
+    <script src="anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <header id="home">
+    <header id="home" class="home">
         <div class="logo">
             <img src="images/logo.png" alt="logo">
             <h1>Computer World</h1>
         </div>
-        <nav>
+        <nav class="menu">
             <ul>
                 <a href="#home" class="headera">Home</a>
                 <a href="#top_sell" class="headera">Bestseller</a>
                 <a href="#pc" class="headera">Computers</a>
+                <a href="#feedback" class="headera">Feedback</a>
             </ul>
         </nav>
+
+        <div class="menu_small_icon">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </div>
+        <div class="menu-small">
+            <div class="menu_small_item">Home</div>
+            <div class="menu_small_item">Bestseller</div>
+            <div class="menu_small_item">Computers</div>
+            <div class="menu_small_item">Feedback</div>
+        </div>
     </header>
 
     <main>
@@ -84,7 +99,7 @@
             </div>
         </div>
         
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <h2>Feedback</h2>
             <form>
                 <input type="text" placeholder="Enter your initials">
